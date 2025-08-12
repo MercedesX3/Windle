@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+@import "tailwindcss/theme";
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol';
+}
+
+/* optional custom styles */
+:root {
+    --color-primary: #2D65E8;
+    --color-secondary: #8BA6E5;
+    --color-button-hover: #003CC9;
+    --color-button-disabled: #C8C8C8;
+    --color-inner-page-containers: #FAFBFF;
+    --color-card-borders: #E2EAE4;
+    --color-light-text: #FAFBFF;
+    --color-dark-text: #000D29;
+    --color-placeholder-text: #818181;
+}
+
+.text-light {
+    color: var(--color-light-text);
+}
+
+.text-dark {
+    color: var(--color-dark-text);
+}
+
+.btn-default {
+    background-color: var(--color-primary);
+    color: var(--color-light-text);
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-radius: 2rem;
+    font-family: inherit;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-default:hover {
+    background-color: var(--color-button-hover);
+}
+
+.btn-press {
+    background-color: transparent;
+    color: var(--color-dark-text);
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-radius: 2rem;
+    font-family: inherit;
+    font-weight: 600;
+    border: 0.125rem solid var(--color-button-hover);
+    transition: background-color 0.3s ease;
+}
+
+.btn-press:hover {
+    background-color: var(--color-button-hover);
+    color: var(--color-light-text);
+}
